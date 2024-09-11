@@ -1,0 +1,19 @@
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Result</title>
+</head>
+<body>
+    <h1>Sentiment Analysis Result</h1>
+    
+    <p><strong>Text:</strong> {{ text }}</p>
+    <p><strong>Polarity:</strong> {{ sentiment.polarity }}</p>
+    <p><strong>Subjectivity:</strong> {{ sentiment.subjectivity }}</p>
+    
+    <a href="/sentiment">Analyze Another Text</a>
+</body>
+</html>

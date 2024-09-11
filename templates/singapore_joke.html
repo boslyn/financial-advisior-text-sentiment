@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore Joke</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .container img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #28a745;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            color: #555;
+            margin: 15px 0;
+            font-size: 1.2rem;
+            white-space: nowrap;
+        }
+
+        form {
+            margin: 10px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                max-width: 600px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h4 {
+                font-size: 1.4rem;
+            }
+
+            input[type="submit"] {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 800px;
+                padding: 30px;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            h4 {
+                font-size: 1.6rem;
+            }
+
+            input[type="submit"] {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Singapore Joke 🇸🇬</h2>
+        <img src="{{ url_for('static', filename='images/encik_mcd.jpg') }}" alt="Singapore Joke">
+        <h4>Why couldn't encik order McSpicy upsize 🍔?</h4>
+        <h4>Because he's a regular! 😂 😂</h4>
+        <form action="/" method="post">
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
+</html>

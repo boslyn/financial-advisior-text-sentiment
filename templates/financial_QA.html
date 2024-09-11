@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Q&A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h2 {
+            color: #007BFF;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        form {
+            margin: 10px 0;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                max-width: 600px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            input[type="text"], input[type="submit"] {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 800px;
+                padding: 30px;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            input[type="text"], input[type="submit"] {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Q&A ❓</h2>
+        <form action="/makersuite" method="post">
+            <input type="text" name="q" placeholder="Ask your question...">
+            <input type="submit" value="Enter">
+        </form>
+        <form action="/" method="post">
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
+</html>
